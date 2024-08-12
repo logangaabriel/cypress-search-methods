@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Search Bar - Rap</title>
+</head>
+<body>
+    <div id="container" data-test="container">
+        <div class="input-group" data-test="input-group">
+            <div class="input-icon" id="search-icon" data-test="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <input 
+                id="search" 
+                type="text" 
+                class="input-field" 
+                placeholder="Search"
+                data-test="search-input"
+            >
+        </div>
+    
+        <ul class="items" data-test="items-list">
+            <li class="item" data-test="item">
+                <div class="item-image" data-test="item-image">
+                    <img src="images/kendrick-lamar.jpg" alt="Kendrick Lamar" data-test="item-image-img">
+                </div>
+                <div class="item-content" data-test="item-content-kendrick">
+                    <h2 class="item-title" data-test="item-title-kendrick">Kendrick Lamar</h2>
+                    <p class="item-subtitle" data-test="item-subtitle">
+                        <i class="fa-solid fa-music"></i>
+                        Artist (1987)
+                    </p>
+                    <p class="item-description" data-test="item-description">
+                        Kendrick Lamar is an American rapper, songwriter, and record producer. Known for his complex and impactful lyrics.
+                    </p>
+                </div>
+            </li>
+
+            <li class="item" data-test="item">
+                <div class="item-image" data-test="item-image">
+                    <img src="images/tupac.jpg" alt="Tupac Shakur" data-test="item-image-img">
+                </div>
+                <div class="item-content" data-test="item-content-tupac">
+                    <h2 class="item-title" data-test="item-title-tupac">Tupac Shakur</h2>
+                    <p class="item-subtitle" data-test="item-subtitle">
+                        <i class="fa-solid fa-music"></i>
+                        Artist (1971 - 1996)
+                    </p>
+                    <p class="item-description" data-test="item-description">
+                        Tupac Shakur, also known as 2Pac, was one of the most influential rappers of all time, known for his politically charged lyrics.
+                    </p>
+                </div>
+            </li>
+
+            <li class="item" data-test="item">
+                <div class="item-image" data-test="item-image">
+                    <img src="images/mf-doom.jpg" alt="MF DOOM" data-test="item-image-img">
+                </div>
+                <div class="item-content" data-test="item-content-doom">
+                    <h2 class="item-title" data-test="item-title-mf-doom">MF DOOM</h2>
+                    <p class="item-subtitle" data-test="item-subtitle">
+                        <i class="fa-solid fa-music"></i>
+                        Artist (1971 - 2020)
+                    </p>
+                    <p class="item-description" data-test="item-description">
+                        MF DOOM was a British-American rapper and producer, known for his unique style and use of a masked alter ego.
+                    </p>
+                </div>
+            </li>
+            <li id="no_results" style="display: none;" data-test="no-results">
+                <p>No results found</p>
+            </li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
